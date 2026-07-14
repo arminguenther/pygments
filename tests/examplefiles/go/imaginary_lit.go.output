@@ -1,0 +1,270 @@
+'package'     Keyword.Namespace
+' '           Text.Whitespace
+'main'        Name.Other
+'\n'          Text.Whitespace
+
+'\n'          Text.Whitespace
+
+'import'      Keyword.Namespace
+' '           Text.Whitespace
+'"fmt"'       Literal.String
+'\n'          Text.Whitespace
+
+'\n'          Text.Whitespace
+
+'func'        Keyword.Declaration
+' '           Text.Whitespace
+'main'        Name.Other
+'('           Punctuation
+')'           Punctuation
+' '           Text.Whitespace
+'{'           Punctuation
+'\n'          Text.Whitespace
+
+'\t'          Text.Whitespace
+'_'           Name.Other
+' '           Text.Whitespace
+'='           Operator
+' '           Text.Whitespace
+'['           Punctuation
+']'           Punctuation
+'complex128'  Keyword.Type
+'{'           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0.i'         Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0_0.i'       Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0.0i'        Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0.0_0i'      Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0.e0i'       Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0.e0i'       Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0.e+0i'      Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0.e-0i'      Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0.0e0i'      Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0.0_0e0i'    Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0.0e0_0i'    Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0e0i'        Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0_0e0i'      Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'.0i'         Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'.0_0i'       Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'.0e0i'       Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'.0e0_0i'     Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0xfp0i'      Literal.Number.Imag.Hex
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0xfp0i'      Literal.Number.Imag.Hex
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0xfp+0i'     Literal.Number.Imag.Hex
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0xfp-0i'     Literal.Number.Imag.Hex
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0xfp0_0i'    Literal.Number.Imag.Hex
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0xf_fp0i'    Literal.Number.Imag.Hex
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0x_fp0i'     Literal.Number.Imag.Hex
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0xf.p0i'     Literal.Number.Imag.Hex
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0xf_f.p0i'   Literal.Number.Imag.Hex
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0x_f.p0i'    Literal.Number.Imag.Hex
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0xf.fp0i'    Literal.Number.Imag.Hex
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0xf.f_fp0i'  Literal.Number.Imag.Hex
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0x.fp0i'     Literal.Number.Imag.Hex
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0x.f_fp0i'   Literal.Number.Imag.Hex
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'1234567890.1234567890e123i' Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0e4567890i'  Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0xabcdef.abcdefp0123i' Literal.Number.Imag.Hex
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0x0123456789.0123456789p456i' Literal.Number.Imag.Hex
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0xABCDEF.ABCDEFp789i' Literal.Number.Imag.Hex
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0x_fa0_1E.D2_bbp-3_0_1i' Literal.Number.Imag.Hex
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'1234i'       Literal.Number.Imag
+','           Punctuation
+'\n'          Text.Whitespace
+
+'                ' Text.Whitespace
+'01234i'      Literal.Number.Imag
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0o1234i'     Literal.Number.Imag.Oct
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0b10101i'    Literal.Number.Imag.Bin
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t\t'        Text.Whitespace
+'0xabcdefi'   Literal.Number.Imag.Hex
+','           Punctuation
+'\n'          Text.Whitespace
+
+'\t'          Text.Whitespace
+'}'           Punctuation
+'\n'          Text.Whitespace
+
+'\t'          Text.Whitespace
+'fmt'         Name.Other
+'.'           Punctuation
+'Println'     Name.Other
+'('           Punctuation
+'"compiles"'  Literal.String
+')'           Punctuation
+'\n'          Text.Whitespace
+
+'}'           Punctuation
+'\n'          Text.Whitespace
