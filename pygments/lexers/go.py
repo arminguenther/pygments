@@ -57,20 +57,20 @@ class GoLexer(RegexLexer):
             # https://go.dev/ref/spec
             # imaginary_lit
             # -- binary_lit "i"
-            (r'0[bB](_?[01])+i', Number.Imag.Bin),
+            (r'(0[bB](?:_?[01])+)(i)', bygroups(Number.Bin, Name.Builtin)),
             # -- octal_lit "i" (but o or O required)
-            (r'0[oO](_?[0-7])+i', Number.Imag.Oct),
+            (r'(0[oO](?:_?[0-7])+)(i)', bygroups(Number.Oct, Name.Builtin)),
             # -- hex_lit "i"
-            (r'0[xX](_?[0-9a-fA-F])+i', Number.Imag.Hex),
+            (r'(0[xX](?:_?[0-9a-fA-F])+)(i)', bygroups(Number.Hex, Name.Builtin)),
             # -- hex_float_lit "i"
-            (r'0[xX]_?[a-fA-F\d](_?[a-fA-F\d])*\.?([a-fA-F\d](_?[a-fA-F\d])*)?[pP][+-]?\d(_?\d)*i', Number.Imag.Hex),
-            (r'0[xX]\.[a-fA-F\d](_?[a-fA-F\d])*[pP][+-]?\d(_?\d)*i', Number.Imag.Hex),
+            (r'(0[xX]_?[a-fA-F\d](?:_?[a-fA-F\d])*\.?(?:[a-fA-F\d](?:_?[a-fA-F\d])*)?[pP][+-]?\d(?:_?\d)*)(i)', bygroups(Number.Float.Hex, Name.Builtin)),
+            (r'(0[xX]\.[a-fA-F\d](?:_?[a-fA-F\d])*[pP][+-]?\d(?:_?\d)*)(i)', bygroups(Number.Float.Hex, Name.Builtin)),
             # -- decimal_digits "i"
-            (r'[0-9](_?[0-9])*i', Number.Imag),
+            (r'([0-9](?:_?[0-9])*)(i)', bygroups(Number.Integer, Name.Builtin)),
             # -- decimal_float_lit "i"
-            (r'\d(_?\d)*\.(\d(_?\d)*)?([eE][+-]?\d(_?\d)*)?i', Number.Imag),
-            (r'\d(_?\d)*[eE][+-]?\d(_?\d)*i', Number.Imag),
-            (r'\.\d(_?\d)*([eE][+-]?\d(_?\d)*)?i', Number.Imag),
+            (r'(\d(?:_?\d)*\.(?:\d(?:_?\d)*)?(?:[eE][+-]?\d(?:_?\d)*)?)(i)', bygroups(Number.Float, Name.Builtin)),
+            (r'(\d(?:_?\d)*[eE][+-]?\d(?:_?\d)*)(i)', bygroups(Number.Float, Name.Builtin)),
+            (r'(\.\d(?:_?\d)*(?:[eE][+-]?\d(?:_?\d)*)?)(i)', bygroups(Number.Float, Name.Builtin)),
             # float_lit
             # -- hex_float_lit
             (r'0[xX]_?[a-fA-F\d](_?[a-fA-F\d])*\.?([a-fA-F\d](_?[a-fA-F\d])*)?[pP][+-]?\d(_?\d)*', Number.Float.Hex),
